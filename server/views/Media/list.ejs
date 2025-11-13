@@ -1,10 +1,11 @@
-<%-include ../partials/header.ejs %>
-<%-include ../partials/main_nav.ejs %>
+<%- include('../partials/header') %>
+<%- include('../partials/main_nav') %>
 <!--Main content for displaying my database-->
 <main class="container">
     <div class="row">
         <div class="offset-md-1 col-md-10">
             <h1><%= title %></h1>
+            <p class="lead">Browse all reviews in the media store.</p>
             <br>
             <table class="table table-bordered table-striped table-hover">
                 <!--Header Row-->
@@ -30,4 +31,4 @@
         </div>
     </div>
 </main>
-<%-include ../partials/footer.ejs %>
+<%- include('../partials/footer') %>

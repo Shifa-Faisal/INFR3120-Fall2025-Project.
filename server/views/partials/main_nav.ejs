@@ -35,12 +35,16 @@
         <% } %>
         </li>
         <li class="nav-item">
-          <% if (title == "Books") { %>
-          <a class="nav-link active" aria-current="page" href="/books"><i class="fa-solid fa-lg fa-book"></i> Books</a>
-          <% } else { %>
-            <a class="nav-link" aria-current="page" href="/books"><i class="fa-solid fa-lg fa-book"></i> Books</a>
-          <% } %>
-          </li>
+          <% if (title == "Media") { %>
+            <a class="nav-link active" aria-current="page" href="/media">
+              <i class="fa fa-star fa-lg"></i> Media Reviews
+            </a>
+            <% } else { %>
+              <a class="nav-link" aria-current="page" href="/media">
+                <i class="fa fa-star fa-lg"></i> Media Reviews
+              </a>
+              <% } %>
+            </li>
         <li class="nav-item">
           <% if (title == "Contact us") { %>
           <a class="nav-link active" aria-current="page" href="/contactus"><i class="fa-solid fa-lg fa-phone"></i> Contact Us</a>
