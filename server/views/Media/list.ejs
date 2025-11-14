@@ -16,6 +16,12 @@
                     <th class="text-center col-1">Rating</th>
                     <th class="text-center col-1">Review</th>
                 </tr>
+
+                <% 
+                  // Safe fallback: if mediaList is undefined, use an empty array
+                  const items = mediaList || [];
+                %>
+
                 <!--for/while loop-->
                 <% for(let count=0; count<mediaList.length;count++) { %>
                     <tr class="d-flex">
